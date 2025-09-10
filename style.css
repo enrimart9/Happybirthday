@@ -25,18 +25,9 @@ body {
   transform: rotateY(-160deg); 
 }
 
-.birthdayCard:hover .front-text {
-  display: none;
-}
-
-.birthdayCard:hover .wrap-deco {
-  display: none;
-}
-
-.birthdayCard:hover .wrap-decoTwo {
-  display: none;
-}
-
+.birthdayCard:hover .front-text,
+.birthdayCard:hover .wrap-deco,
+.birthdayCard:hover .wrap-decoTwo,
 .birthdayCard:hover .plate {
   display: none;
 }
@@ -90,7 +81,9 @@ body {
   border-radius: 50%;
 }
 
-.decorations:before, .decorations:after, .decorationsTwo:before, .decorationsTwo:after, .decorationsThree:before, .decorationsThree:after {
+.decorations:before, .decorations:after, 
+.decorationsTwo:before, .decorationsTwo:after, 
+.decorationsThree:before, .decorationsThree:after {
   content:"";
   position: absolute;
   border-left: 20px solid transparent;
@@ -170,7 +163,11 @@ body {
   height:20px;
   top:5px;
   border-radius:20px;
-  box-shadow: 10px 5px #f15bb5, 20px 0px #432818, 30px 2px #f15bb5, 40px 5px #432818, 50px 5px #f15bb5, 60px 0px #432818, 70px 5px #f15bb5, 80px 5px #432818, 90px 5px #f15bb5;
+  box-shadow: 10px 5px #f15bb5, 20px 0px #432818, 
+              30px 2px #f15bb5, 40px 5px #432818, 
+              50px 5px #f15bb5, 60px 0px #432818, 
+              70px 5px #f15bb5, 80px 5px #432818, 
+              90px 5px #f15bb5;
 }
 
 .plate:before {
@@ -225,12 +222,17 @@ body {
 .wishes {
   position: relative;
   top:-100px;
-  margin: 25px;
+  margin: 20px;
+  text-align: justify;   /* mejor distribución */
 }
 
-p {
+.wishes p {
   font-family: 'Brush Script MT', cursive;
   color: #333;
+  font-size: 13px;      /* más pequeño que antes */
+  line-height: 1.2;     /* más compacto */
+  word-wrap: break-word; /* evita que palabras largas rompan el diseño */
+  margin-bottom: 6px;
 }
 
 .name {
